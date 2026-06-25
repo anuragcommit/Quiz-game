@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eaecf0;
+}
+
+.screen{
+  display: none;
+}
+
+#start_screen {
+  background-color: white;
+  /* padding: 5px; */
+  width: 25rem;
+  height: 10rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  color: rgb(255, 106, 0);
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 900;
+}
+
+#start_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(255, 106, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#start_btn:hover {
+  background-color: rgb(233, 98, 1);
+  transform: scale(1.05);
+}
+
+#card {
+  background-color: white;
+  width: 25rem;
+  height: 18rem;
+  border-radius: 10px;
+}
+
+h3 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#info {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  background-color: rgb(247, 239, 233);
+  margin-bottom: 7px;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+#options {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  /* border-radius: 10px; */
+  /* background-color: orange; */
+}
+
+#bar {
+  background-color: rgb(247, 239, 233);
+  height: 0.5rem;
+  /* width: 0%; */
+  border-radius: 20px;
+  padding: 0 10px;
+  margin: 0 18px;
+}
+#result_screen {
+  background-color: white;
+  width: 25rem;
+  height: 13rem;
+  border-radius: 10px;
+}
+
+#score_card {
+  display: flex;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 5px;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(251, 237, 226);
+}
+
+#restart_btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#remark {
+  font-size: 1.2rem;
+  color: rgb(255, 106, 0);
+  font-weight: 700;
+}
+
+#restart_btn button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgb(255, 106, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#restart_btn button:hover {
+  background-color: rgb(233, 98, 1);
+  transform: scale(1.05);
+}

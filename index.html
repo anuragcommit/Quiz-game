@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="start_screen" class="screen" >
+            <h1>Quiz Time!</h1>
+            <p>Test your knowledge with these fun questions</p>
+            <button id="start_btn">Start Quiz</button>
+        </div>
+
+        <div id="card" class="ques_screen screen" >
+            <h3>What is the capital of France?</h3>
+            <div id="info">
+                <p>Question: <span id="ques_no">1</span> of 5</p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+
+            <div id="options">
+                <ul>
+                    <li>London</li>
+                    <li>Berlin</li>
+                    <li>Paris</li>
+                    <li>Madrid</li>
+                </ul>
+            </div>
+
+            <div id="bar"></div>
+        </div>
+<div id="result_screen" class="screen">
+    <h1>Quiz Results</h1>
+    <div id="score_card">
+        <p>You scored: <span id="total_score">3</span> out of 5</p>
+        <p id="remark">Good effort! Keep learning!</p>
+    </div>
+    <div id="restart_btn">
+        <button>Restart Quiz</button>
+    </div>
+</div>
+
+    </div>
+</body>
+
+</html>
