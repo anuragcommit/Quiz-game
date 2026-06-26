@@ -13,20 +13,22 @@ body {
   background-color: #eaecf0;
 }
 
-.screen{
-  display: none;
+ .screen{
+  display: none !important;
 }
 
-#start_screen {
-  background-color: white;
-  /* padding: 5px; */
-  width: 25rem;
-  height: 10rem;
-  border-radius: 10px;
+.flex_screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+#start_screen {
+  background-color: white;
+  width: 25rem;
+  height: 10rem;
+  border-radius: 10px;
 }
 
 h1 {
@@ -37,16 +39,16 @@ h1 {
 }
 
 #start_btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 5px; */
   width: 5rem;
   height: 2rem;
   border-radius: 5px;
   background-color: rgb(255, 106, 0);
   color: white;
-  border: none;
+  border: orangered;
   cursor: pointer;
 }
 #start_btn:hover {
@@ -81,7 +83,24 @@ ul li {
   padding: 0px 10px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
+
+ul li:hover{
+    background-color: rgb(233, 98, 1);
+    border-color: orangered;
+}
+ul li .correct{
+  background-color: #e6fff0;
+  border-color: #a3f0c4;
+  color: #28a745;
+}
+ul li .incorrect{
+  background-color: #fff0f0;
+  border-color: #ffbdbd;
+  color: #dc3545;
+}
+
 #options {
   display: flex;
   flex-direction: column;
@@ -90,14 +109,23 @@ ul li {
   /* background-color: orange; */
 }
 
-#bar {
+#progress-bar {
   background-color: rgb(247, 239, 233);
   height: 0.5rem;
   /* width: 0%; */
   border-radius: 20px;
   padding: 0 10px;
   margin: 0 18px;
+  overflow: hidden;
 }
+.progress{
+  height: 100%;
+  background-color: #e86a33;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+
 #result_screen {
   background-color: white;
   width: 25rem;
@@ -139,4 +167,19 @@ ul li {
 #restart_btn button:hover {
   background-color: rgb(233, 98, 1);
   transform: scale(1.05);
+}
+
+@media (max-width:500px) {
+  
+  .screen{
+padding: 1rem;
+  }
+
+  h1{
+    font-size: 2 rem;
+  }
+
+  .start_btn{
+padding: 10px;
+  }
 }
